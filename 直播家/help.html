@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	    <meta name="format-detection" content="telephone=no" />
+		<title>直播家</title>
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/help.css" />
+	</head>
+	<body>
+		<!--手机端导航栏-->
+		<div class="header-phone">
+			<ul class="nav-phone">
+				<li>
+					<a href="index.html">
+						首页
+					</a>
+				</li>
+				<li>
+					<a href="scene-video.html">
+						应用场景
+					</a>
+				</li>
+				<li>
+					<a href="service.html">
+						产品服务
+					</a>
+				</li>
+				<li>
+					<a href="case.html">
+						精彩案例
+					</a>
+				</li>
+				<li class="active">
+					<a href="help.html">
+						帮助中心
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--登录-->
+		<div class="login">
+			<div class="login-container">
+				<div class="login-title">
+					<img src="img/login-logo.png"/>
+				</div>
+				<form action="" method="post">
+					<div class="login-brief">
+						<div class="login-brief-user">
+							<input type="text" name="User" placeholder="用户名或邮箱" />
+						</div>
+						<div class="login-brief-password">
+							<input type="password" name="Password" placeholder="密码" />
+						</div>
+						<a class="jump-reset" href="#">忘记密码</a>
+					</div>
+					<input class="login-submit" type="submit" value="登录"/>
+				</form>
+				<a class="jump-register" href="#">还没有账户？立即注册</a>
+				<div class="login-other">
+					<span>可使用以下方式登录</span>
+					<div class="login-other-img">
+						<a href="#">
+							<img src="img/icon/login-wx.png"/>
+						</a>
+						<a href="#">
+							<img src="img/icon/login-qq.png"/>
+						</a>
+						<a href="#">
+							<img src="img/icon/login-wb.png"/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--头部-->
+		<header class="container">
+			<div class="header-container">
+				<img class="header-logo" src="img/logo.png"/>
+				<ul class="nav">
+					<li>
+						<a href="index.html">
+							首页
+						</a>
+					</li>
+					<li>
+						<a href="scene-video.html">
+							应用场景
+						</a>
+					</li>
+					<li>
+						<a href="service.html">
+							产品服务
+						</a>
+					</li>
+					<li>
+						<a href="case.html">
+							精彩案例
+						</a>
+					</li>
+					<li class="active">
+						<a href="help.html">
+							帮助中心
+						</a>
+					</li>
+				</ul>
+				<!--登录之前-->
+				<div class="header-right">
+					<a class="header-login" href="#">登录</a>
+					<a class="header-register" href="#">注册</a>
+					<span class="interval">|</span>
+					<a href="#">
+						<span class="login-wx"></span>
+					</a>
+					<a href="#">
+						<span class="login-qq"></span>
+					</a>
+					<a href="#">
+						<span class="login-wb"></span>
+					</a>
+				</div>
+				<!--end-->
+				<!--登录之后-->
+				<!--<div class="header-right">
+					<div class="header-login-urse">
+						<span>
+							<img src="img/icon/login-head.png"/>
+						</span>
+						<p>
+							user902554
+						</p>
+					</div>
+					<a class="header-control" href="#">
+						直播控制台
+					</a>
+				</div>-->
+				<!--end-->
+				<!--手机端右边导航栏、登录点击按钮-->
+				<div class="header-right-phone">
+					<span class="header-login">
+						<img src="img/icon/login-user.png"/>
+					</span>
+					<span class="nav-icon-phone">
+						<img src="img/icon/nav.png"/>
+					</span>
+				</div>
+			</div>
+		</header>
+		
+		<!--注册-->
+		<div class="register">
+			<div class="register-container">
+				<div class="register-title">
+					<img src="img/login-logo.png"/>
+					<p>注册账户</p>
+				</div>
+				<form action="" method="post">
+					<ul class="register-brief">
+						<li>
+							<span>用户名</span>
+							<input type="text" name="register-user" id="register-user" value="" />
+						</li>
+						<li>
+							<span>邮箱</span>
+							<input type="email" name="register-email" id="register-email" value="" />
+						</li>
+						<li>
+							<span>手机号</span>
+							<input type="tel" name="register-tel" id="register-tel" value="" />
+							<input type="button" id="verification" value="发送验证码" />
+						</li>
+						<li>
+							<span>验证码</span>
+							<input type="text" name="register-code" id="register-code" value="" />
+						</li>
+						<li>
+							<span>密码</span>
+							<input type="password" name="register-password" id="register-password" value="" />
+						</li>
+					</ul>
+					<input type="submit" class="register-submit" value="注册"/>
+				</form>
+				<a class="jump-login" href="#">已有账户，马上登录</a>
+			</div>
+		</div>
+		<!--重置密码-->
+		<div class="reset">
+			<div class="reset-container">
+				<div class="reset-title">
+					<img src="img/login-logo.png"/>
+					<p>重置密码</p>
+				</div>
+				<form action="">
+					<div class="reset-email">
+						<span>邮箱</span>
+						<input type="text" name="" id="" value="" />
+					</div>
+					<input type="submit" class="reset-submit" name="" id="" value="发送重置密码链接" />
+				</form>
+			</div>
+		</div>
+		<div class="container">
+			<div class="help">
+				<div class="help-container">
+					<div class="help-title">
+						常见问题
+					</div>
+					<ul class="help-content">
+						<li>
+							<div class="help-ask">
+								<h3>直播家是什么？</h3>
+								<span>
+									<img src="img/icon/help-icon-2.png"/>
+								</span>
+							</div>
+							<div class="help-answer">
+								<p>直播家是国内最大的企业级直播服务平台，助力企业、创业团队、个人快速拥有直播能力，包含南方报业集团、平安保险、碧桂园、美的集团、农商行等知名活动。</p>
+							</div>
+						</li>
+						<li>
+							<div class="help-ask">
+								<h3>直播家能做什么？</h3>
+								<span>
+									<img src="img/icon/help-icon-2.png"/>
+								</span>
+							</div>
+							<div class="help-answer">
+								<p>直播家提供企业在直播服务领域全面的解决方案，包括三大部分的服务产品：</p>
+								<p>①助力用户制作专业直播内容的制播工具群，以云导播台为核心，同时还有app、采集工具、编码硬件及网络传输硬件等产品。</p>
+								<p>②帮助用户快速拥有直播能力的平台产品线，依托官网（http://www.no888.cn）的直播家平台，结合微博、微信、钉钉，覆盖客户从公关、营销到内训方面的全需求。</p>
+								<p>③帮助用户直播内容广泛传播的直播发行联盟，已联合国内50余家主流视频、直播平台，为企业扩展发布通道，为发布通道找寻专业内容。</p>
+							</div>
+						</li>
+						<li>
+							<div class="help-ask">
+								<h3>直播家联系方式？</h3>
+								<span>
+									<img src="img/icon/help-icon-2.png"/>
+								</span>
+							</div>
+							<div class="help-answer">
+								<p>直播家是国内最大的企业级直播服务平台，助力企业、创业团队、个人快速拥有直播能力，包含南方报业集团、平安保险、碧桂园、美的集团、农商行等知名活动。</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--尾部-->
+			<div class="footer">
+				<div class="footer-container">
+					<div class="qr-code">
+						<p>微信公众号</p>
+					<img src="img/qr-code.jpg"/>
+					</div>
+					<ul class="footer-nav">
+						<li>
+							<a href="help.html">关于我们</a>|
+						</li>
+						<li>
+							<a href="help.html">广告投放</a>|
+						</li>
+						<li>
+							<a href="help.html">联系我们</a>
+						</li>
+					</ul>
+					<div class="footer-copyright">
+						<span>网络文化经营许可证 粤网文[2016]4583-1081号</span>
+						<span>节目制作经营许可证 粤字01735号</span>
+					</div>
+					<p class="footer-copyright">© 2016 龙眼传媒有限公司 粤ICP备16011165号 ALL Right Reserver</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js" ></script>
+	<script type="text/javascript" src="js/js.js" ></script>
+	<script>
+		$(".help-ask").on("click",function(){
+			var n=$(".help-ask").index(this);
+			$(".help-answer").eq(n).slideToggle();
+			$(".help-ask span").eq(n).toggleClass("active"); return false;
+		})
+	</script>
+</html>
